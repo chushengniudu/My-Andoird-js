@@ -1,0 +1,23 @@
+<html>
+<body>
+<script language="javascript">
+function javaCallJsFunction(isHide) {
+ var x = document.getElementById('div');
+  x.className = "";
+}
+function js2java() {
+ JSInterface.javaFunction();
+}
+</script>
+<style type="text/css">
+.hide {
+display:none;
+}
+</style>
+
+<input type="button" onClick="js2java()" style="height:50px;width:200px" value="JS调用java无参函数">
+<div class="hide" id="div">
+    <font color="#FF0000">java 调用js方法成功</font>
+</div>
+</body>
+
